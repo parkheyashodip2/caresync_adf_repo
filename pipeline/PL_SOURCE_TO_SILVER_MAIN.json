@@ -47,7 +47,26 @@
 					"items": {
 						"value": "@activity('Read Source Tables List').output.value",
 						"type": "Expression"
-					}
+					},
+					"activities": [
+						{
+							"name": "Set variable1",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"policy": {
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "value",
+								"value": {
+									"value": "@item()",
+									"type": "Expression"
+								}
+							}
+						}
+					]
 				}
 			}
 		],
@@ -55,6 +74,11 @@
 			"source_system": {
 				"type": "string",
 				"defaultValue": "neou_postgres"
+			}
+		},
+		"variables": {
+			"value": {
+				"type": "String"
 			}
 		},
 		"annotations": []
