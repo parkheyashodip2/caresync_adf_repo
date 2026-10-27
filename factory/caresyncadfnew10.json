@@ -1,0 +1,15 @@
+{
+	"name": "caresyncadfnew10",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e47fe3ec-a957-418b-a9c7-83d53d1edca1",
+		"tenantId": "9a46376f-446b-479e-999a-c7ed2c212565"
+	}
+}
